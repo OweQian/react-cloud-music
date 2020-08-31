@@ -1,17 +1,12 @@
 import React from 'react';
-
+import { GlobalStyle } from './style'
+import { IconStyle } from './assets/iconfont/iconfont'
 function App() {
   return (
-    <div>
-      <header>
-        <a
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+      <GlobalStyle/>
+      <IconStyle/>
+      <i className="iconfont">&#xe696;</i>
     </div>
   );
 }
