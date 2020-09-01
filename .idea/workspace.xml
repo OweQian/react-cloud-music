@@ -30,15 +30,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="chore: styled-components&#10;feat: 默认样式和字体图标准备">
-      <change afterPath="$PROJECT_DIR$/src/application/Home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/Rank/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/Recommend/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/Singers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: redux 准备">
+      <change afterPath="$PROJECT_DIR$/src/components/Slider/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Slider/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Recommend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Recommend/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/iconfont" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,8 +73,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\work\cloud-music\src\application" />
       <recent name="E:\work\cloud-music\src\assets\iconfont" />
+      <recent name="E:\work\cloud-music\src\application" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598840372209</updated>
-      <workItem from="1598840373329" duration="4261000" />
+      <workItem from="1598840373329" duration="13944000" />
+      <workItem from="1598941577130" duration="3486000" />
     </task>
     <task id="LOCAL-00001" summary="init project folder">
       <created>1598840946104</created>
@@ -104,7 +102,35 @@
       <option name="project" value="LOCAL" />
       <updated>1598853035567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: react-router react-router-dom react-router-config&#10;feat: 路由配置">
+      <created>1598878152569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598878152569</updated>
+    </task>
+    <task id="LOCAL-00004" summary="style: 全局样式准备">
+      <created>1598880426659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598880426659</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: iconfont&#10;feat: 公共组件开发">
+      <created>1598882802891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598882802891</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: redux 准备">
+      <created>1598889523661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598889523661</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,11 +146,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project folder" />
     <MESSAGE value="chore: styled-components&#10;feat: 默认样式和字体图标准备" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: styled-components&#10;feat: 默认样式和字体图标准备" />
+    <MESSAGE value="chore: react-router react-router-dom react-router-config&#10;feat: 路由配置" />
+    <MESSAGE value="style: 全局样式准备" />
+    <MESSAGE value="feat: iconfont&#10;feat: 公共组件开发" />
+    <MESSAGE value="feat: redux 准备" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: redux 准备" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="231" key="#JavaScript" timestamp="1598852455768">
@@ -135,9 +166,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="228" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598840826535" />
-    <state x="90" y="256" key="Vcs.Push.Dialog.v2" timestamp="1598853036906">
+    <state x="90" y="256" key="Vcs.Push.Dialog.v2" timestamp="1598889524776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598853036906" />
+    <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598889524776" />
+    <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598945226092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598945226092" />
+    <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598941579149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598941579149" />
+    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598880021049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598880021049" />
   </component>
 </project>
