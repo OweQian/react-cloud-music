@@ -30,13 +30,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: redux 准备">
-      <change afterPath="$PROJECT_DIR$/src/components/Slider/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Slider/style.js" afterDir="false" />
+    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: 推荐列表">
+      <change afterPath="$PROJECT_DIR$/src/application/Recommend/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Recommend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Recommend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseUI/Scroll/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/Scroll/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseUI/Scroll/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/Scroll/style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/iconfont" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,6 +86,8 @@
       <updated>1598840372209</updated>
       <workItem from="1598840373329" duration="13944000" />
       <workItem from="1598941577130" duration="3486000" />
+      <workItem from="1599105645620" duration="1994000" />
+      <workItem from="1599127200870" duration="2983000" />
     </task>
     <task id="LOCAL-00001" summary="init project folder">
       <created>1598840946104</created>
@@ -178,9 +179,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598941579149" />
-    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598880021049">
+    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1599105493246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598880021049" />
+    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599105493246" />
   </component>
 </project>
