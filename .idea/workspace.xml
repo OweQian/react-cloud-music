@@ -30,12 +30,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: 推荐列表">
-      <change afterPath="$PROJECT_DIR$/src/application/Recommend/style.js" afterDir="false" />
+    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: scroll组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Recommend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Recommend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseUI/Scroll/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/Scroll/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseUI/Scroll/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/Scroll/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1598840373329" duration="13944000" />
       <workItem from="1598941577130" duration="3486000" />
       <workItem from="1599105645620" duration="1994000" />
-      <workItem from="1599127200870" duration="2983000" />
+      <workItem from="1599127200870" duration="5985000" />
     </task>
     <task id="LOCAL-00001" summary="init project folder">
       <created>1598840946104</created>
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598889523661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: scroll组件">
+      <created>1599130431458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599130431458</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +162,8 @@
     <MESSAGE value="style: 全局样式准备" />
     <MESSAGE value="feat: iconfont&#10;feat: 公共组件开发" />
     <MESSAGE value="feat: redux 准备" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: redux 准备" />
+    <MESSAGE value="feat: scroll组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: scroll组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="231" key="#JavaScript" timestamp="1598852455768">
@@ -167,18 +174,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="228" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598840826535" />
-    <state x="90" y="256" key="Vcs.Push.Dialog.v2" timestamp="1598889524776">
+    <state width="1171" height="228" key="GridCell.Tab.0.bottom" timestamp="1599187140122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598889524776" />
+    <state width="1171" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599187140122" />
+    <state width="1171" height="228" key="GridCell.Tab.0.center" timestamp="1599187140121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1171" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599187140121" />
+    <state width="1171" height="228" key="GridCell.Tab.0.left" timestamp="1599187140121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1171" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599187140121" />
+    <state width="1171" height="228" key="GridCell.Tab.0.right" timestamp="1599187140121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1171" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599187140121" />
+    <state x="90" y="256" key="Vcs.Push.Dialog.v2" timestamp="1599130433039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599130433039" />
     <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598945226092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598945226092" />
-    <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598941579149">
+    <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599187127489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598941579149" />
+    <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599187127489" />
     <state x="180" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1599105493246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
