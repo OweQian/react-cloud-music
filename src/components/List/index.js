@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload'
 import { ListWrapper, List, ListItem } from './style'
 import { getCount } from '../../utils'
 
@@ -14,7 +15,9 @@ const RecommendList = props => {
               <ListItem key={recommend.id}>
                 <div className="img_wrapper">
                   <div className="decorate"/>
-                  <img src={`${recommend.picUrl}?param=300*300`} width="100%" height="100%" alt="music"/>
+                  <LazyLoad placeholder={<img width="100%" height="100%" src={require('./music.png')} alt="music"/>}>
+                    <img src={`${recommend.picUrl}?param=300*300`} width="100%" height="100%" alt="music"/>
+                  </LazyLoad>
                   <div className="play_count">
                     <i className="iconfont play">&#xe885;</i>
                     <span className="count">{getCount(recommend.playCount)}</span>

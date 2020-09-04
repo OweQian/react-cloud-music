@@ -30,10 +30,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: scroll组件">
+    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: Recommend 接口对接">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Recommend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Recommend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,7 @@
       <workItem from="1598840373329" duration="13944000" />
       <workItem from="1598941577130" duration="3486000" />
       <workItem from="1599105645620" duration="1994000" />
-      <workItem from="1599127200870" duration="5985000" />
+      <workItem from="1599127200870" duration="8807000" />
     </task>
     <task id="LOCAL-00001" summary="init project folder">
       <created>1598840946104</created>
@@ -137,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599130431458</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: Recommend 接口对接">
+      <created>1599188436693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599188436693</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +171,8 @@
     <MESSAGE value="feat: iconfont&#10;feat: 公共组件开发" />
     <MESSAGE value="feat: redux 准备" />
     <MESSAGE value="feat: scroll组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: scroll组件" />
+    <MESSAGE value="feat: Recommend 接口对接" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Recommend 接口对接" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="231" key="#JavaScript" timestamp="1598852455768">
@@ -190,10 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1171" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599187140121" />
-    <state x="90" y="256" key="Vcs.Push.Dialog.v2" timestamp="1599130433039">
+    <state x="90" y="256" key="Vcs.Push.Dialog.v2" timestamp="1599188437925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599130433039" />
+    <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599188437925" />
     <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598945226092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
