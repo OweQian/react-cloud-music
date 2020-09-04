@@ -2,12 +2,13 @@ import React, { useEffect } from 'react'
 import Slider from '../../components/Slider/index'
 import RecommendList from '../../components/List/index'
 import Scroll from '../../baseUI/Scroll/index'
+import Loading from '../../baseUI/Loading/index'
 import { connect } from 'react-redux'
 import { forceCheck } from 'react-lazyload'
 import * as actionCreators from './store/actionCreators'
 import { Content } from './style'
 const Recommend = props => {
-  const { bannerList, recommendList } = props
+  const { bannerList, recommendList, enterLoading } = props
   const { getBannerListDataDispatch, getRecommendListDataDispatch } = props
 
   useEffect(() => {
@@ -21,6 +22,7 @@ const Recommend = props => {
 
   return (
     <Content>
+      { enterLoading && <Loading/>}
       <Scroll className="list" onScroll={forceCheck}>
         <div>
           <Slider bannerList={bannerListJS}/>
@@ -33,7 +35,8 @@ const Recommend = props => {
 
 const mapStateToProps = (state) => ({
   bannerList: state.getIn(['recommend', 'bannerList']),
-  recommendList: state.getIn(['recommend', 'recommendList'])
+  recommendList: state.getIn(['recommend', 'recommendList']),
+  enterLoading: state.getIn(['recommend', 'enterLoading'])
 })
 
 const mapDispatchToProps = (dispatch) => ({
