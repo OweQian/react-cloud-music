@@ -1,9 +1,43 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Scroll from '../Scroll/index'
 import PropTypes from 'prop-types'
-
+import { List, ListItem } from './style'
 const Horizen = props => {
-  return ()
+  const {list, oldVal, title} = props
+  const {handleClick} = props
+  const Category = useRef (null)
+
+// 加入初始化内容宽度的逻辑
+  useEffect (() => {
+    let categoryDOM = Category.current
+    let tagElems = categoryDOM.querySelectorAll ('span')
+    let totalWidth = 0
+    Array.from (tagElems).forEach (ele => {
+      totalWidth += ele.offsetWidth
+    })
+    categoryDOM.style.width = `${totalWidth}px`
+  }, [])
+  return (
+    <Scroll direction="horizental">
+      <div ref={Category}>
+        <List>
+          <span>{title}</span>
+          {
+            list.map((item) => {
+              return (
+                <ListItem
+                  key={item.key}
+                  className={`${oldVal === item.key ? 'selected' : ''}`}
+                  onClick={() => handleClick(item.key)}>
+                  {item.name}
+                </ListItem>
+              )
+            })
+          }
+        </List>
+      </div>
+    </Scroll>
+  )
 }
 
 Horizen.propTypes = {
@@ -23,3 +57,5 @@ Horizen.defaultProps = {
   title: '',
   handleClick: null
 }
+
+export default React.memo(Horizen)
