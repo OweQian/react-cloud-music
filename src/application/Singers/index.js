@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import Horizen from '../../baseUI/HorizenItem/index'
 import Scroll from '../../baseUI/Scroll/index'
 import Loading from '../../baseUI/Loading/index'
 import LazyLoad, { forceCheck } from 'react-lazyload'
 import { connect } from 'react-redux'
+import { DataContext } from './data'
 import { typeOptions, areaOptions, alphaOptions } from '../../mock'
 import {
   NavContainer,
@@ -19,11 +20,15 @@ import {
   changeEnterLoading,
   changePageCount
 } from './store/actionCreators'
+import {CHANGE_ALPHA, CHANGE_AREA, CHANGE_TYPE} from "./data";
 
 const Singers = props => {
-  let [type, setType] = useState (-1)
-  let [area, setArea] = useState (-1)
-  let [alpha, setAlpha] = useState('')
+  // let [type, setType] = useState (-1)
+  // let [area, setArea] = useState (-1)
+  // let [alpha, setAlpha] = useState('')
+  const { data, dispatch } = useContext(DataContext)
+  const { type, area, alpha } = data.toJS()
+
   const {
     singerList,
     enterLoading,
@@ -37,22 +42,24 @@ const Singers = props => {
   } = props
 
   useEffect(() => {
-    getSingerDispatch(type, area, alpha)
+    if (!singerList.length) {
+      getSingerDispatch(type, area, alpha)
+    }
     // eslint-disable-next-line
   }, [])
 
   const handleUpdateType = (val) => {
-    setType(val)
+    dispatch({type: CHANGE_TYPE, data: val})
     updateDispatch(val, area, alpha)
   }
 
   const handleUpdateArea = (val) => {
-    setArea(val)
+    dispatch({type: CHANGE_AREA, data: val})
     updateDispatch(type, val, alpha)
   }
 
   const handleUpdateAlpha = (val) => {
-    setAlpha(val)
+    dispatch({type: CHANGE_ALPHA, data: val})
     updateDispatch(type, area, val)
   }
 
