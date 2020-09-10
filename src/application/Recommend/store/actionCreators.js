@@ -2,19 +2,19 @@ import * as actionTypes from './actionTypes'
 import { fromJS } from 'immutable'
 import { getBannerRequest, getRecommendListRequest } from '../../../api/request'
 
-export const changeBannerList = (value) => ({
+export const changeBannerList = (data) => ({
   type: actionTypes.CHANGE_BANNER,
-  data: fromJS(value),
+  data: fromJS(data),
 })
 
-export const changeRecommendList = (value) => ({
+export const changeRecommendList = (data) => ({
   type: actionTypes.CHANGE_RECOMMEND_LIST,
-  data: fromJS(value),
+  data: fromJS(data),
 })
 
-export const changeEnterLoading = (value) => ({
+export const changeEnterLoading = (data) => ({
   type: actionTypes.CHANGE_ENTER_LOADING,
-  data: value
+  data
 })
 
 export const getBannerList = () => {

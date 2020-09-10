@@ -1,7 +1,10 @@
-import React, { forwardRef, useState, useEffect, useRef, useImperativeHandle } from 'react'
+import React, {forwardRef, useState, useEffect, useRef, useImperativeHandle, useMemo} from 'react'
 import PropTypes from 'prop-types'
 import BScroll from 'better-scroll'
-import { ScrollContainer } from './style'
+import Loading from '../Loading/index'
+import LoadingV2 from '../LoadingV2/index'
+import { debounce } from '../../utils'
+import { ScrollContainer, PullDownLoading, PullUpLoading } from './style'
 const Scroll = forwardRef((props, ref) => {
   const [bScroll, setBScroll] = useState(null)
   const scrollContainerRef = useRef(null)
@@ -13,7 +16,9 @@ const Scroll = forwardRef((props, ref) => {
     pullUp,
     pullDown,
     bounceTop: top,
-    bounceBottom: bottom
+    bounceBottom: bottom,
+    pullUpLoading,
+    pullDownLoading,
   } = props
 
   // 创建 better-scroll
@@ -53,32 +58,6 @@ const Scroll = forwardRef((props, ref) => {
     }
   }, [onScroll, bScroll])
 
-  // 上拉加载
-  useEffect(() => {
-    if (!bScroll || !pullUp) return
-    bScroll.on('scrollEnd', () => {
-      if (bScroll.y <= bScroll.maxScrollY +100) {
-        pullUp()
-      }
-    })
-    return () => {
-      bScroll.off('scrollEnd')
-    }
-  }, [pullUp, bScroll])
-
-  // 下拉刷新
-  useEffect(() => {
-    if (!bScroll || !pullDown) return
-    bScroll.on('touchEnd', (pos) => {
-      if (pos.y > 50) {
-        pullDown()
-      }
-    })
-    return () => {
-      bScroll.off('touchEnd')
-    }
-  }, [pullDown, bScroll])
-
   // 暴露刷新接口和bs实例
   useImperativeHandle(ref, () => ({
     refresh () {
@@ -94,9 +73,52 @@ const Scroll = forwardRef((props, ref) => {
     }
   }))
 
+  let pullUpDebounce = useMemo(() => {
+    return debounce(pullUp,300)
+  }, [pullUp])
+
+  let pullDownDebounce = useMemo(() => {
+    return debounce(pullDown, 3000)
+  }, [pullDown])
+
+  // 上拉加载
+  useEffect(() => {
+    if (!bScroll || !pullUp) return
+    bScroll.on('scrollEnd', () => {
+      if (bScroll.y <= bScroll.maxScrollY +100) {
+        pullUpDebounce()
+      }
+    })
+    return () => {
+      bScroll.off('scrollEnd')
+    }
+  }, [pullUp, pullUpDebounce, bScroll])
+
+  // 下拉刷新
+  useEffect(() => {
+    if (!bScroll || !pullDown) return
+    bScroll.on('touchEnd', (pos) => {
+      if (pos.y > 50) {
+        pullDownDebounce()
+      }
+    })
+    return () => {
+      bScroll.off('touchEnd')
+    }
+  }, [pullDown, pullDownDebounce, bScroll])
+
+  const PullUpDisplayStyle = pullUpLoading ? { display: ''} : { display: 'none'}
+  const PullDownDisplayStyle = pullDownLoading ? { display: ''} : { display: 'none'}
+
   return (
     <ScrollContainer ref={scrollContainerRef}>
       { props.children }
+      <PullUpLoading style={PullUpDisplayStyle}>
+        <Loading/>
+      </PullUpLoading>
+      <PullDownLoading style={PullDownDisplayStyle}>
+        <LoadingV2/>
+      </PullDownLoading>
     </ScrollContainer>
   )
 })

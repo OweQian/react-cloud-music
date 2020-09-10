@@ -15,7 +15,7 @@ const Horizen = props => {
     Array.from (tagElems).forEach (ele => {
       totalWidth += ele.offsetWidth
     })
-    categoryDOM.style.width = `${totalWidth}px`
+    categoryDOM.style.width = `${totalWidth + 10}px`
   }, [])
   return (
     <Scroll direction="horizental">

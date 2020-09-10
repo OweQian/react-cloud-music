@@ -30,12 +30,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: Recommend 接口对接">
+    <list default="true" id="cec30813-528b-4dae-90c2-003ed4aca533" name="Default Changelist" comment="feat: HorizenItem">
+      <change afterPath="$PROJECT_DIR$/src/baseUI/LoadingV2/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseUI/LoadingV2/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mock/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Recommend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Recommend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Recommend/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Recommend/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Singers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Singers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Singers/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Singers/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseUI/HorizenItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/HorizenItem/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseUI/Scroll/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/Scroll/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseUI/Scroll/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseUI/Scroll/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +81,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\cloud-music\src\mock" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\work\cloud-music\src\assets\iconfont" />
       <recent name="E:\work\cloud-music\src\application" />
@@ -88,6 +101,7 @@
       <workItem from="1598941577130" duration="3486000" />
       <workItem from="1599105645620" duration="1994000" />
       <workItem from="1599127200870" duration="8807000" />
+      <workItem from="1599718936416" duration="6047000" />
     </task>
     <task id="LOCAL-00001" summary="init project folder">
       <created>1598840946104</created>
@@ -179,10 +193,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="240" y="231" key="#JavaScript/0.0.1920.1040@0.0.1920.1040" timestamp="1598852455768" />
+    <state x="52" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599618750493">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="52" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599618750493" />
     <state x="228" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598840826535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="228" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598840826535" />
+    <state x="378" y="275" key="FileChooserDialogImpl" timestamp="1599618615396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="378" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599618615396" />
     <state width="1171" height="228" key="GridCell.Tab.0.bottom" timestamp="1599187140122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -203,17 +225,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="90" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599188437925" />
-    <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598945226092">
+    <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599631573681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598945226092" />
+    <state x="100" y="100" width="1435" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599631573681" />
     <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599187127489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599187127489" />
-    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1599105493246">
+    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1599620934967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599105493246" />
+    <state x="180" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599620934967" />
   </component>
 </project>

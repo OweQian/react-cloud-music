@@ -5,7 +5,10 @@ import Scroll from '../../baseUI/Scroll/index'
 import Loading from '../../baseUI/Loading/index'
 import { connect } from 'react-redux'
 import { forceCheck } from 'react-lazyload'
-import * as actionCreators from './store/actionCreators'
+import {
+  getBannerList,
+  getRecommendList
+} from './store/actionCreators'
 import { Content } from './style'
 const Recommend = props => {
   const { bannerList, recommendList, enterLoading } = props
@@ -45,10 +48,10 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getBannerListDataDispatch () {
-    dispatch(actionCreators.getBannerList())
+    dispatch(getBannerList())
   },
   getRecommendListDataDispatch () {
-    dispatch(actionCreators.getRecommendList())
+    dispatch(getRecommendList())
   }
 })
 
